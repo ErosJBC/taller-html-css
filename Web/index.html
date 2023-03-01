@@ -1,0 +1,118 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera página web</title>
+    <link rel="shortcut icon" href="assets/img/icono.jpg" type="image/jpg">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description" content="Esta es mi primera página web en HTML">
+</head>
+<body>
+    <header>
+        <!-- Comentario -->
+        <!-- Lista de encabezados HTML -->
+        <h1>Primera página web</h1>
+        <!-- <h2>Primera página web</h2>
+        <h3>Primera página web</h3>
+        <h4>Primera página web</h4>
+        <h5>Primera página web</h5>
+        <h6>Primera página web</h6> -->
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="views/view01.html">View 1</a>
+            </li>
+            <li>
+                <a href="views/view02.html">View 2</a>
+            </li>
+        </ul>
+        <!-- Para comentar en bloque, usamos Ctrl + } -->
+        <!-- <ol>
+            <li>Carro</li>
+            <li>Bus</li>
+            <li>Avión</li>
+            <li>Tren</li>
+        </ol> -->
+    </nav>
+    <main>
+        <section>
+            <h2>Sección 1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis minus magni obcaecati quos sunt eos nemo a deserunt eum ipsa, officia corrupti voluptatibus alias, ratione rem maxime quam laborum sint.</p>
+        </section>
+        <section>
+            <h2>Sección 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis minus magni obcaecati quos sunt eos nemo a deserunt eum ipsa, officia corrupti voluptatibus alias, <span style="color: blue;">ratione rem maxime</span> quam laborum sint.</p>
+        </section>
+        <section>
+            <h2>Sección 3</h2>
+            <p>Lorem ipsum dolor, sit <strong>amet consectetur</strong> adipisicing elit. Facilis minus magni obcaecati quos sunt eos nemo a deserunt eum ipsa, officia corrupti voluptatibus alias, <b>ratione</b> rem <em>maxime</em> quam laborum sint.</p>
+        </section>
+        <section>
+            <div>
+                <label for="input-text">Input text: </label>
+                <input id="input-text" type="text" value="" maxlength="5" placeholder="Ingrese un texto">
+            </div>
+            <div>
+                <label for="input-number">Input number: </label>
+                <input id="input-number" type="number" value="15" placeholder="Ingrese un número" min="0" max="20">
+            </div>
+            <div>
+                <label for="input-checkbox">Input checkbox: </label>
+                <input id="input-checkbox" type="checkbox" checked>
+            </div>
+            <div>
+                <label for="input-email">Input email: </label>
+                <input id="input-email" type="email" placeholder="Ingrese un email" value="correo@gmail.com">
+            </div>
+            <div>
+                <label for="input-radio">Input radio: </label>
+                <input id="input-radio" type="radio" checked>
+            </div>
+            <div>
+                <label for="input-password">Input password: </label>
+                <input id="input-password" type="password" placeholder="Ingrese un password">
+            </div>
+            <div>
+                <label for="input-datetime">Input datetime: </label>
+                <input id="input-datetime" type="datetime" placeholder="Ingrese un datetime" value="28/02/2023">
+            </div>
+            <div>
+                <label for="input-range">Input range: </label>
+                <input id="input-range" type="range" value="70" min="0" max="100">
+            </div>
+            <div>
+                <button type="button">Botón 1</button>
+                <button type="submit">Botón submit</button>
+                <!-- <button type="reset">Botón reset</button> -->
+            </div>
+        </section>
+        <aside>
+            <h2>Esto es una aside y sirve para contenido publicitario</h2>
+        </aside>
+        <article>
+            <h2>Esto es un article y su contenido sí está relacionado con el contenido de la página</h2>
+        </article>
+    </main>
+    <footer>
+        <section>
+            Footer sección 1
+            <nav>
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                </ul>
+            </nav>
+        </section>
+        <section>Footer sección 2</section>
+        <section>Footer sección 3</section>
+        <div>
+            <p>Copyright 2021 Mi Primera Página web</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
