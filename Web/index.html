@@ -19,13 +19,13 @@
         <h5>Primera página web</h5>
         <h6>Primera página web</h6> -->
     </header>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <ul class="navbar-items">
             <li>
-                <a href="views/view01.html">View 1</a>
+                <a class="navbar-link" href="views/view01.html">View 1</a>
             </li>
             <li>
-                <a href="views/view02.html">View 2</a>
+                <a class="navbar-link" href="views/view02.html">View 2</a>
             </li>
         </ul>
         <!-- Para comentar en bloque, usamos Ctrl + } -->
@@ -36,79 +36,88 @@
             <li>Tren</li>
         </ol> -->
     </nav>
-    <main>
-        <section>
-            <h2>Sección 1</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis minus magni obcaecati quos sunt eos nemo a deserunt eum ipsa, officia corrupti voluptatibus alias, ratione rem maxime quam laborum sint.</p>
+    <main class="main">
+        <section class="section-style">
+            <h2 class="title-section">Sección 1</h2>
+            <p class="paragraph-section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis minus magni obcaecati quos sunt eos nemo a deserunt eum ipsa, officia corrupti voluptatibus alias, ratione rem maxime quam laborum sint.</p>
         </section>
-        <section>
-            <h2>Sección 2</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis minus magni obcaecati quos sunt eos nemo a deserunt eum ipsa, officia corrupti voluptatibus alias, <span style="color: blue;">ratione rem maxime</span> quam laborum sint.</p>
+        <section class="section-style">
+            <h2 class="title-section">Sección 2</h2>
+            <p class="paragraph-section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis minus magni obcaecati quos sunt eos nemo a deserunt eum ipsa, officia corrupti voluptatibus alias, <span style="color: blue;">ratione rem maxime</span> quam laborum sint.</p>
         </section>
-        <section>
-            <h2>Sección 3</h2>
-            <p>Lorem ipsum dolor, sit <strong>amet consectetur</strong> adipisicing elit. Facilis minus magni obcaecati quos sunt eos nemo a deserunt eum ipsa, officia corrupti voluptatibus alias, <b>ratione</b> rem <em>maxime</em> quam laborum sint.</p>
+        <section class="section-style">
+            <h2 class="title-section">Sección 3</h2>
+            <p class="paragraph-section">Lorem ipsum dolor, sit <strong>amet consectetur</strong> adipisicing elit. Facilis minus magni obcaecati quos sunt eos nemo a deserunt eum ipsa, officia corrupti voluptatibus alias, <b>ratione</b> rem <em>maxime</em> quam laborum sint.</p>
         </section>
-        <section>
-            <div>
-                <label for="input-text">Input text: </label>
-                <input id="input-text" type="text" value="" maxlength="5" placeholder="Ingrese un texto">
+        <section class="section-inputs">
+            <div class="container-input">
+                <label class="title-input" for="input-text">Input text: </label>
+                <input class="input-style" id="input-text" type="text" value="" maxlength="5" placeholder="Ingrese un texto">
+            </div>
+            <div class="container-input">
+                <label class="title-input" for="input-number">Input number: </label>
+                <input class="input-style" id="input-number" type="number" value="15" placeholder="Ingrese un número" min="0" max="20">
             </div>
             <div>
-                <label for="input-number">Input number: </label>
-                <input id="input-number" type="number" value="15" placeholder="Ingrese un número" min="0" max="20">
-            </div>
-            <div>
-                <label for="input-checkbox">Input checkbox: </label>
+                <label class="title-input" for="input-checkbox">Input checkbox: </label>
                 <input id="input-checkbox" type="checkbox" checked>
             </div>
+            <div class="container-input">
+                <label class="title-input" for="input-email">Input email: </label>
+                <input class="input-style" id="input-email" type="email" placeholder="Ingrese un email" value="correo@gmail.com">
+            </div class="container-input">
             <div>
-                <label for="input-email">Input email: </label>
-                <input id="input-email" type="email" placeholder="Ingrese un email" value="correo@gmail.com">
-            </div>
-            <div>
-                <label for="input-radio">Input radio: </label>
+                <label class="title-input" for="input-radio">Input radio: </label>
                 <input id="input-radio" type="radio" checked>
             </div>
-            <div>
-                <label for="input-password">Input password: </label>
-                <input id="input-password" type="password" placeholder="Ingrese un password">
+            <div class="container-input">
+                <label class="title-input" for="input-password">Input password: </label>
+                <input class="input-style" id="input-password" type="password" placeholder="Ingrese un password">
             </div>
-            <div>
-                <label for="input-datetime">Input datetime: </label>
-                <input id="input-datetime" type="datetime" placeholder="Ingrese un datetime" value="28/02/2023">
+            <div class="container-input">
+                <label class="title-input" for="input-datetime">Input datetime: </label>
+                <input class="input-style" id="input-datetime" type="datetime" placeholder="Ingrese un datetime" value="28/02/2023">
             </div>
-            <div>
-                <label for="input-range">Input range: </label>
+            <div class="container-input">
+                <label class="title-input" for="input-range">Input range: </label>
                 <input id="input-range" type="range" value="70" min="0" max="100">
             </div>
-            <div>
-                <button type="button">Botón 1</button>
-                <button type="submit">Botón submit</button>
+            <div class="container-input container-btn">
+                <button class="btn" type="button">Botón 1</button>
+                <button class="btn" type="submit">Botón submit</button>
                 <!-- <button type="reset">Botón reset</button> -->
             </div>
         </section>
-        <aside>
-            <h2>Esto es una aside y sirve para contenido publicitario</h2>
-        </aside>
-        <article>
-            <h2>Esto es un article y su contenido sí está relacionado con el contenido de la página</h2>
-        </article>
+        <div class="container-others">
+            <aside>
+                <h2>Esto es una aside y sirve para contenido publicitario</h2>
+            </aside>
+            <article>
+                <h2>Esto es un article y su contenido sí está relacionado con el contenido de la página</h2>
+            </article>
+        </div>
     </main>
-    <footer>
-        <section>
-            Footer sección 1
-            <nav>
-                <ul>
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
-                </ul>
-            </nav>
-        </section>
-        <section>Footer sección 2</section>
-        <section>Footer sección 3</section>
-        <div>
+    <footer class="footer">
+        <div class="container-info">
+            <section class="info-footer">
+                <h4>Footer sección 1</h4>
+                <nav>
+                    <ul class="navbar-items items-vertical">
+                        <li class="footer-link">Link 1</li>
+                        <li class="footer-link">Link 2</li>
+                        <li class="footer-link">Link 3</li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="info-footer">
+                <h4>Footer sección 2</h4>
+            </section>
+            <section class="info-footer">
+                <h4>Footer sección 3</h4>
+            </section>
+        </div>
+        <hr>
+        <div class="container-copyright">
             <p>Copyright 2021 Mi Primera Página web</p>
         </div>
     </footer>
